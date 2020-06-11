@@ -1,0 +1,215 @@
+
+.logo{
+    position: static;
+    width: 23%;
+    padding: 1%;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+}
+.img{
+    margin: 10px;
+    padding: 10px;
+}
+.topnav{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.menu a{
+    color: grey;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    padding: 40px;
+}
+.menu{
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    position: relative;
+    float: right;
+    padding-right: 50px;
+}
+.Name{
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+.heading{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    height: 100px;
+    padding: 50px;
+}
+.subHead{
+    display: block;
+    text-align: left;
+    justify-content: bottom;
+    padding: 8px;
+    margin-left: 12%;
+}
+.flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "Footprints ProjectCreate" "NSA Wander";
+    background-color: white;
+    align-content: center;
+    justify-content: center;
+}
+.flexItem {
+    display: flex;
+    background-color: #F5F5F5;
+    /*
+    margin: 10px;
+    padding: 5px;
+    width: 500px;
+    height: 500px;
+    */
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+.Footprints {
+    grid-area: Footprints; 
+    justify-content: flex-end;
+}
+.ProjectCreate{
+    grid-area: ProjectCreate;
+    justify-content: flex-start;
+}
+.NSA{
+    grid-area: NSA;
+    justify-content: flex-end;
+}
+.Wander{
+    grid-area: Wander;
+    justify-content: flex-start;
+}
+.overlay1 {
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 10%;
+    transition: .5s ease;
+    background-color: #9EBFCA;
+    z-index: 100;
+}
+.overlay2 {
+    display: flex;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0%;
+    transition: .5s ease;
+    background-color:#EB7F5D;
+}
+.overlay3 {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0%;
+    transition: .5s ease;
+    background-color: #373738;
+}
+.overlay4 {
+    position: flex;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0%;
+    transition: .5s ease;
+    background-color:#7FBAB1;
+}
+.overlay1:hover {
+    opacity: .7;
+}
+.ProjectCreate:hover .overlay2{
+    opacity: .7;
+}
+.flexItem:hover .overlay3{
+    opacity: .7;
+}
+.flexItem:hover .overlay4{
+    opacity: .7;
+}
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.container{
+    background-color: white;
+    padding-right: 15px;
+    padding-left: 150px;
+    margin-right: 12%;
+     margin-left: 12%;
+    height: 250px;
+}
+#AboutText{
+    font-size: 18px;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+.button {
+    display: block;
+    margin: auto;
+    padding: 6px 10px;
+    border-radius: 18px;
+    background-color: #5B1B34;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+.button1 {
+    padding: 6px 18px;
+    border-radius: 18px;
+    background-color: white;
+    color: #5B1B34;
+    border: 2px solid #5B1B34;
+}
+.button1:hover {
+    background-color: #5B1B34;
+    color: white;
+}
+.footer {
+    display: block;
+    background-color: #373738;
+    padding: 50px;
+    color: white;
+}
+#contact{
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+.footer a {
+    text-align: center;
+    color: white;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    padding: 40px;
+}
+@media only screen and (max-width: 1000px) {
+}
