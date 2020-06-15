@@ -48,109 +48,99 @@
 }
 .flex {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
     grid-template-areas: "Footprints ProjectCreate" "NSA Wander";
     background-color: white;
-    align-content: center;
-    justify-content: center;
+    padding: 10px;
+    justify-content: space-evenly;
 }
-.flexItem {
-    display: flex;
-    background-color: #F5F5F5;
-    /*
-    margin: 10px;
-    padding: 5px;
-    width: 500px;
-    height: 500px;
-    */
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-}
-.Footprints {
-    grid-area: Footprints; 
-    justify-content: flex-end;
-}
-.ProjectCreate{
-    grid-area: ProjectCreate;
-    justify-content: flex-start;
-}
-.NSA{
-    grid-area: NSA;
-    justify-content: flex-end;
-}
-.Wander{
-    grid-area: Wander;
-    justify-content: flex-start;
-}
-.overlay1 {
+.flexItem1 {
     display: block;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 10%;
-    transition: .5s ease;
-    background-color: #9EBFCA;
-    z-index: 100;
+    background-color: #F5F5F5;
+    margin: 5px;
+    width: 500px;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    padding: 15px;
+    font-size: 16px;
+    text-align: center;
 }
-.overlay2 {
-    display: flex;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0%;
-    transition: .5s ease;
-    background-color:#EB7F5D;
+.flexItem2 {
+    display: block;
+    background-color: #F5F5F5;
+    margin: 5px;
+    width: 500px;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    padding: 15px;
+    font-size: 16px;
+    text-align: center;
 }
-.overlay3 {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0%;
-    transition: .5s ease;
-    background-color: #373738;
+.flexItem3 {
+    display: block;
+    background-color: #F5F5F5;
+    margin: 5px;
+    width: 500px;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    padding: 15px;
+    font-size: 16px;
+    text-align: center;
 }
-.overlay4 {
-    position: flex;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0%;
-    transition: .5s ease;
-    background-color:#7FBAB1;
+.flexItem4 {
+    display: block;
+    background-color: #F5F5F5;
+    margin: 5px;
+    width: 500px;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    padding: 15px;
+    font-size: 16px;
+    text-align: center;
 }
 .overlay1:hover {
-    opacity: .7;
+    background-color:#9EBFCA;
+    filter:alpha(opacity=90);
+    -moz-opacity:0.9;
+    -khtml-opacity: 0.9;
+    opacity: 0.9;
+    transition: .5s ease;
+    z-index: 10000;
 }
-.ProjectCreate:hover .overlay2{
-    opacity: .7;
+.overlay2:hover{
+    background-color: #EB7F5D;
+    filter:alpha(opacity=90);
+    -moz-opacity:0.9;
+    -khtml-opacity: 0.9;
+    opacity: 0.9;
+    transition: .5s ease;
+    z-index: 10000;
 }
-.flexItem:hover .overlay3{
+.overlay3:hover{
     opacity: .7;
+    background-color: #373738;
+    filter:alpha(opacity=90);
+    -moz-opacity:0.9;
+    -khtml-opacity: 0.9;
+    opacity: 0.9;
+    transition: .5s ease;
+    z-index: 10000;
 }
-.flexItem:hover .overlay4{
-    opacity: .7;
+.overlay4:hover{
+    background-color:#7FBAB1;
+    filter:alpha(opacity=90);
+    -moz-opacity:0.9;
+    -khtml-opacity: 0.9;
+    opacity: 0.9;
+    transition: .5s ease;
+    z-index: 10000;
 }
 .text {
     color: white;
     font-size: 20px;
     position: absolute;
-    top: 50%;
+    /*top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);*/
     text-align: center;
 }
 .container{
