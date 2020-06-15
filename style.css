@@ -1,0 +1,69 @@
+
+.logo{
+    position: static;
+    width: 23%;
+    padding: 1%;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+}
+.img{
+    margin: 10px;
+    padding: 10px;
+}
+.topnav{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.menu a{
+    color: grey;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    padding: 40px;
+}
+.menu{
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    position: relative;
+    float: right;
+    padding-right: 50px;
+}
+.Name{
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+.heading{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    height: 100px;
+    padding: 50px;
+}
+.subHead{
+    display: block;
+    text-align: left;
+    justify-content: bottom;
+    padding: 8px;
+    margin-left: 12%;
+}
+
+.footer {
+    display: block;
+    background-color: #373738;
+    padding: 50px;
+    color: white;
+}
+#contact{
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+.footer a {
+    text-align: center;
+    color: white;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    padding: 40px;
+}
+@media only screen and (max-width: 1000px) {
+}
